@@ -17,5 +17,14 @@ export default defineConfig({
         width: auto !important;
       }
     `,
-  ]
+  ],
+  targets: {
+    ie: 11,
+  },
+  polyfill: {
+    imports: [
+      'element-remove',
+      'babel-polyfill',
+    ],
+  },
 });
